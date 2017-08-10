@@ -1,12 +1,9 @@
 # map-app
 Web Application that shows downloads on a map
 
-# Install
-python 2.7
-django:  pip install Django==1.11
-
-## tools
-python 2.7
+# tools
+- python 2.7
+- django:  pip install Django==1.11
 
 ## start server
 cd server

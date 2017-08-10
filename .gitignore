@@ -60,3 +60,4 @@ typings/
 # Python
 *.pyc
 __pycache__/
+.idea/

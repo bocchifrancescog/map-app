@@ -34,11 +34,10 @@ class MapContainer extends React.Component {
   initMap(){
     const google = window.google;
     this.map = new google.maps.Map(this.refs.map, {
-          center: {lat: -31.563910, lng: 147.154312},
-          zoom: 2
+          center: {lat: 45.464200, lng: 9.190000},
+          zoom: 4
         });
 
-        console.log(this.map);
         this.loadPositions(google);
   }
 
@@ -54,7 +53,7 @@ class MapContainer extends React.Component {
         // The map() method here has nothing to do with the Google Maps API.
         var markers = positions.map(function(position, i) {
           return new google.maps.Marker({
-            position: {lat: position.latitude, lng: position.longitude},
+            position: new google.maps.LatLng({lat: parseFloat(position.latitude), lng: parseFloat(position.longitude)}),
             label: position.app_id
           });
         });
@@ -64,50 +63,6 @@ class MapContainer extends React.Component {
 
     });
 
-  }
-
-  loadLocations(google) {
-    return fetch('https://facebook.github.io/react-native/movies.json')
-      .then((response) => response.json())
-      .then((responseJson) => {
-        //return responseJson.movies;
-        var locations = [
-            {lat: -31.563910, lng: 147.154312},
-            {lat: -33.718234, lng: 150.363181},
-            {lat: -33.727111, lng: 150.371124},
-            {lat: -33.848588, lng: 151.209834},
-            {lat: -33.851702, lng: 151.216968},
-            {lat: -34.671264, lng: 150.863657},
-            {lat: -35.304724, lng: 148.662905},
-            {lat: -36.817685, lng: 175.699196},
-            {lat: -36.828611, lng: 175.790222}
-          ];
-          /*for (var j=0; j<100000; j++){
-            locations.push({lat: getRandom(-90, 90), lng: getRandom(-180, 180)})
-          }*/
-
-            // Create an array of alphabetical characters used to label the markers.
-            var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-            // Add some markers to the map.
-            // Note: The code uses the JavaScript Array.prototype.map() method to
-            // create an array of markers based on a given "locations" array.
-            // The map() method here has nothing to do with the Google Maps API.
-            var markers = locations.map(function(location, i) {
-              return new google.maps.Marker({
-                position: location,
-                label: labels[i % labels.length]
-              });
-            });
-
-            // Add a marker clusterer to manage the markers.
-            var markerCluster = new window.MarkerClusterer(this.map, markers,
-                {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-
-      })
-      .catch((error) => {
-        console.error(error);
-      });
   }
 
   render(){
