@@ -1,8 +1,6 @@
 import React from 'react'
-import Service from './Service'
-import TableHeader from './TableHeader'
 
-class MapContainer extends React.Component {
+class TableHeader extends React.Component {
   render(){
     const firstColumn = this.props.firstColumn;
     const otherColumns = this.props.otherColumns;
@@ -35,4 +33,4 @@ class MapContainer extends React.Component {
   }
 }
 
-export default MapContainer;
+export default TableHeader;

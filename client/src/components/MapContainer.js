@@ -4,16 +4,19 @@ import Service from './Service'
 class MapContainer extends React.Component {
   constructor(props){
     super(props);
-    this.map = null;
-    this.positions = []
-    this.initMap = this.initMap.bind(this);
+    this.state = {
+        map : null,
+        markerClusterer: null,
+        markers: {},
+    }
+
+    this.createMap = this.createMap.bind(this);
   }
 
   componentWillReceiveProps ({ isScriptLoaded, isScriptLoadSucceed }) {
     if (isScriptLoaded && !this.props.isScriptLoaded) { // load finished
       if (isScriptLoadSucceed) {
-        console.log("componentWillReceiveProps");
-        this.initMap();
+        this.createMap();
       }
       else {
         console.log("error");
@@ -25,46 +28,79 @@ class MapContainer extends React.Component {
   componentDidMount() {
     const { isScriptLoaded, isScriptLoadSucceed } = this.props
      if (isScriptLoaded && isScriptLoadSucceed) {
-        console.log('componentDidMount');
-        this.initMap();
+        this.createMap();
     }
   }
 
 
-  initMap(){
+  createMap(){
     const google = window.google;
-    this.map = new google.maps.Map(this.refs.map, {
+    const map = new google.maps.Map(
+        this.refs.map, {
           center: {lat: 45.464200, lng: 9.190000},
           zoom: 4
-        });
+    });
 
-        this.loadPositions(google);
-  }
+    this.setState({
+      map : map,
+      markerClusterer: new window.MarkerClusterer(
+        map, [], {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'})
+    });
 
-  loadPositions(google){
-    Service.getPositions('query', positions => {
-        this.setState({
-          positions: positions
-        });
-
-        // Add some markers to the map.
-        // Note: The code uses the JavaScript Array.prototype.map() method to
-        // create an array of markers based on a given "locations" array.
-        // The map() method here has nothing to do with the Google Maps API.
-        var markers = positions.map(function(position, i) {
-          return new google.maps.Marker({
-            position: new google.maps.LatLng({lat: parseFloat(position.latitude), lng: parseFloat(position.longitude)}),
-            label: position.app_id
-          });
-        });
-
-        var markerCluster = new window.MarkerClusterer(this.map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-
+    var self = this;
+    google.maps.event.addListener(map, 'idle', function() {
+      self.loadMarkers();
     });
 
   }
+  loadMarkers(){
+    console.log("Loading Markers...");
+    var map = this.state.map;
 
+    var markers = this.state.markers;
+    const markerClusterer = this.state.markerClusterer;
+
+    const google = window.google;
+    // Loading positions from backend
+    Service.getPositions(map.getBounds(),
+      positions => {
+        console.log("Total load: "+positions.length);
+      // Remove old markers that are not inside the view
+      for (var key in markers) {
+          if (markers.hasOwnProperty(key)) {
+              if(!this.isVisible(markers[key], map)){
+                console.log("removing "+key)
+                markerClusterer.removeMarker(markers[key]);
+                delete markers[key];
+              }
+          }
+      }
+
+      // Check if it is not already there, if not add it
+      var my_marks = []
+      positions.map(function(position, i) {
+          if (!(position.id in markers)){
+            console.log("Add "+position.id)
+            var markTmp =  new google.maps.Marker({
+              position: new google.maps.LatLng({
+                lat: parseFloat(position.latitude), lng: parseFloat(position.longitude)}),
+              label: position.app_id
+            });
+            markers[position.id] = markTmp;
+            my_marks.push(markTmp);
+          }
+      });
+
+      // Now I have all the markers
+      markerClusterer.addMarkers(my_marks);
+      this.setState({
+        markers: markers
+      });
+    });
+  }
+  isVisible(marker, map){
+  return map.getBounds().contains(marker.getPosition());
+  }
   render(){
     return (
     <div>

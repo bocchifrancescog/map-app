@@ -1,5 +1,13 @@
-function getPositions(query, cb) {
-  return fetch('api/map/downloads', {
+function getPositions(bounds, cb) {
+  var latMax = bounds.getNorthEast().lat();
+  var latMin= bounds.getSouthWest().lat();
+  var lngMax = bounds.getNorthEast().lng();
+  var lngMin = bounds.getSouthWest().lng();
+
+  var url = 'api/map/downloads/?';
+  var url =url + 'latMax='+latMax+'&latMin='+latMin+'&lngMax='+lngMax+'&lngMin='+lngMin+'';
+
+  return fetch(url, {
     accept: "application/json"
   })
     .then(checkStatus)
@@ -25,6 +33,15 @@ function getAppIds(query, cb) {
     .then(cb);
 }
 
+function getDownloadsByTime(query, cb) {
+  return fetch('api/map/downloads_by_time', {
+    accept: "application/json"
+  })
+    .then(checkStatus)
+    .then(parseJSON)
+    .then(cb);
+}
+
 function checkStatus(response) {
   if (response.status >= 200 && response.status < 300) {
     return response;
@@ -42,5 +59,5 @@ function parseJSON(response) {
   return response.json();
 }
 
-const Service = { getPositions, getDownloadsByCountry, getAppIds  };
+const Service = { getPositions, getDownloadsByCountry, getAppIds, getDownloadsByTime };
 export default Service;
