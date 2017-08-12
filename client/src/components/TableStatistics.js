@@ -4,9 +4,6 @@ import { Table, Button } from 'semantic-ui-react'
 import ReactTable from 'react-table'
 import 'react-table/react-table.css'
 
-import TableHeader from './TableHeader'
-import TableBody from './TableBody'
-
 class TableStatistics extends React.Component {
 
   getHeader(firstColumn, appIds) {
@@ -18,12 +15,12 @@ class TableStatistics extends React.Component {
   }
   getColumns(appIds, firstColumn, fieldName){
     var cols = [{
-        Header: () => <span className=""> {firstColumn}</span>,
+        Header: () => <span className="ui header"> {firstColumn}</span>,
         accessor: fieldName,
       }]
     appIds.map(function(col, j){
         cols.push({
-          Header: col.app_id,
+          Header: () => <span className="ui header small">{col.app_id} </span>,
           accessor: 'counts.'+col.app_id
         })
     });
@@ -41,11 +38,13 @@ class TableStatistics extends React.Component {
 
 
         return (
-          <ReactTable className="-highlight -striped"
+          <ReactTable className="ui table -highlight -striped"
             data={data}
             columns={columns}
             defaultPageSize={5}
             minRows={5}
+            showPageSizeOptions={false}
+            totalCount={ data.length }
             showPagination={this.props.showPagination}
             NextComponent={Button}
             PreviousComponent={Button}

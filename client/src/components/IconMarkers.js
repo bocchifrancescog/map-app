@@ -1,6 +1,6 @@
 function IconMarkers(){
   this.base = "http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|"
-  this.colors = ['1E90FF', '00CD66', 'FFA500', 'EE0000', '8E388E'];
+  this.colors = ['00CD66', 'FFA500', 'EE0000', '8E388E'];
   this.index = 0;
   this.IconToColor = {};
 
@@ -20,11 +20,20 @@ function IconMarkers(){
     }
     // If not there it means I need to create one
     if (this.index < this.colors.length){
-        this.IconToColor[app_id] = this.colorURL(this.colors[this.index]);
+        this.IconToColor[app_id] = {
+            'url': this.colorURL(this.colors[this.index]),
+            'color': this.colors[this.index]
+          };
         this.index++;
     }else{
         // I have finished the default colors, let's create a random one
-        this.IconToColor[app_id] = this.colorURL(this.getRandomColor());
+        const color = this.getRandomColor();
+
+        this.IconToColor[app_id] = {
+            'url': this.colorURL(color),
+            'color': color
+          };
+
     }
     return this.IconToColor[app_id];
   }

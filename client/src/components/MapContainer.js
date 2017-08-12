@@ -2,7 +2,7 @@ import React from 'react'
 import scriptLoader from 'react-async-script-loader'
 import IconMarkers from './IconMarkers'
 import Service from './Service'
-import { Grid } from 'semantic-ui-react'
+import { Header, Grid } from 'semantic-ui-react'
 
 class MapContainer extends React.Component {
   constructor(props){
@@ -91,7 +91,7 @@ class MapContainer extends React.Component {
                 position: new google.maps.LatLng({
                   lat: parseFloat(position.latitude), lng: parseFloat(position.longitude)}),
                 label: position.app_id,
-                icon: icons.getIcon(position.app_id),
+                icon: icons.getIcon(position.app_id)['url'],
               });
               markers[position.id] = markTmp;
               my_marks.push(markTmp);
@@ -111,6 +111,16 @@ class MapContainer extends React.Component {
   }
 
   render(){
+    const iconToColor = this.state.icons.getIconToColor();
+    const legendDiv = Object.keys(iconToColor).map((key, index) => (
+          <div key={key} className="item" style={{color:'#'+iconToColor[key]['color']  }}>
+            <i className="large marker middle aligned icon" ></i>
+            <div className="content">
+              <span className="header grey">{key}</span>
+            </div>
+          </div>
+        ));
+
     return (
       <Grid>
       <Grid.Row columns={2}>
@@ -119,7 +129,10 @@ class MapContainer extends React.Component {
             { !this.state.map && <div className="center-md">Loading...</div> }
         </Grid.Column>
         <Grid.Column width={3}>
-          Legend
+          <Header color="grey"> Legend </Header>
+          <div className="ui relaxed divided list">
+            {legendDiv}
+          </div>
         </Grid.Column>
       </Grid.Row>
       </Grid>
