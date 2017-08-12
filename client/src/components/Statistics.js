@@ -1,6 +1,7 @@
 import React from 'react'
 import Service from './Service'
 import TableStatistics from './TableStatistics'
+import { Header, Grid } from 'semantic-ui-react'
 
 
 class MapContainer extends React.Component {
@@ -45,22 +46,34 @@ class MapContainer extends React.Component {
 
 
     return (
-    <div>
-     Statistics
-        <TableStatistics
-            firstColumn="Country"
-            fieldName="country"
-            appIds={appIds}
-            data={byCountry}
-            />
-        <TableStatistics
-            firstColumn="Time of the day"
-            fieldName="label"
-            appIds={appIds}
-            data={byTime}
-            />
+      <Grid>
+        <Grid.Row>
+          <Grid.Column>
+            <Header as='h2'>Statistics </Header>
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row columns={2}>
+          <Grid.Column>
+            <TableStatistics
+                firstColumn="Country"
+                fieldName="country"
+                appIds={appIds}
+                data={byCountry}
+                showPagination={true}
+                />
 
-    </div>
+            </Grid.Column>
+            <Grid.Column>
+            <TableStatistics
+                firstColumn="Time of the day"
+                fieldName="label"
+                appIds={appIds}
+                data={byTime}
+                showPagination={false}
+                />
+            </Grid.Column>
+        </Grid.Row>
+      </Grid>
     )
   }
 }

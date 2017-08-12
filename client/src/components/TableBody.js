@@ -1,4 +1,5 @@
 import React from 'react'
+import { Table } from 'semantic-ui-react'
 
 class TableBody extends React.Component {
   render(){
@@ -8,12 +9,12 @@ class TableBody extends React.Component {
     const appIds = this.props.appIds;
 
     const dataRow = data.map((element, i) =>
-          <tr key={i.toString()}>
-            <td>{element[fieldName]}</td>
+          <Table.Row key={i.toString()}>
+            <Table.Cell>{element[fieldName]}</Table.Cell>
             {appIds.map((app, j) =>
-                    <td key={j.toString()}> {element['counts'][app.app_id]} </td>
+                    <Table.Cell key={j.toString()}> {element['counts'][app.app_id]} </Table.Cell>
                 )}
-          </tr>
+          </Table.Row>
         );
 
         return (

@@ -1,4 +1,6 @@
 import React from 'react'
+import { Table } from 'semantic-ui-react'
+
 
 class TableHeader extends React.Component {
   render(){
@@ -7,26 +9,22 @@ class TableHeader extends React.Component {
 
     if (otherColumns.length > 0){
         return (
-            <thead>
-                <tr>
-                    <th>
-                        {firstColumn}
-                    </th>
+            <Table.Header>
+                <Table.Row>
+                    <Table.HeaderCell>{firstColumn}</Table.HeaderCell>
                     {otherColumns.map((col, j) =>
-                        <th key={j.toString()}> {col.app_id} </th>
+                        <Table.HeaderCell key={j.toString()}>
+                          {col.app_id}
+                        </Table.HeaderCell>
                     )}
-                </tr>
-            </thead>
+                </Table.Row>
+            </Table.Header>
         );
     }else{
         return (
-            <thead>
-              <tr>
-                <th>
-                    Waiting data...
-                </th>
-              </tr>
-            </thead>
+           <div>
+            Waiting data...
+          </div>
         );
     }
 

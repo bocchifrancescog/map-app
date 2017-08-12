@@ -89,6 +89,10 @@ def downloads_by_country(request):
     json_data = json.dumps(data, cls=DjangoJSONEncoder)
     return HttpResponse(json_data, content_type='application/json')
 
+def get_apps():
+    apps = DownloadLocationTime.objects.all().values_list('app_id', flat=True).distinct();
+    return apps;
+
 def app_ids(request):
     """
     Return downloads by country
@@ -96,7 +100,7 @@ def app_ids(request):
     :return:
     """
 
-    objects = DownloadLocationTime.objects.all().values_list('app_id', flat=True).distinct()
+    objects = get_apps()
     data = []
     for obj in objects:
         data.append({
@@ -113,7 +117,7 @@ def downloads_by_time(request):
     :param request:
     :return:
     """
-    apps = ['IOS_ALERT', 'IOS_MATE']
+    apps = get_apps();
     data = [
         {
             'label' : 'Morning',

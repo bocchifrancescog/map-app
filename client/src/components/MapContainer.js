@@ -1,6 +1,9 @@
 import React from 'react'
 import scriptLoader from 'react-async-script-loader'
+import IconMarkers from './IconMarkers'
 import Service from './Service'
+import { Grid } from 'semantic-ui-react'
+
 class MapContainer extends React.Component {
   constructor(props){
     super(props);
@@ -8,9 +11,9 @@ class MapContainer extends React.Component {
         map : null,
         markerClusterer: null,
         markers: {},
+        icons: new IconMarkers(),
     }
 
-    this.createMap = this.createMap.bind(this);
   }
 
   componentWillReceiveProps ({ isScriptLoaded, isScriptLoadSucceed }) {
@@ -19,7 +22,7 @@ class MapContainer extends React.Component {
         this.createMap();
       }
       else {
-        console.log("error");
+        console.log("Error while loading the map");
         this.props.onError();
         }
     }
@@ -31,7 +34,6 @@ class MapContainer extends React.Component {
         this.createMap();
     }
   }
-
 
   createMap(){
     const google = window.google;
@@ -47,66 +49,80 @@ class MapContainer extends React.Component {
         map, [], {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'})
     });
 
-    var self = this;
-    google.maps.event.addListener(map, 'idle', function() {
-      self.loadMarkers();
+    // Every time I change the zoom or the viewport I load only the markers that
+    // are visible
+    google.maps.event.addListener(map, 'idle', () => {
+      this.loadMarkers();
     });
 
   }
+
   loadMarkers(){
     console.log("Loading Markers...");
     var map = this.state.map;
-
     var markers = this.state.markers;
+    const icons = this.state.icons;
     const markerClusterer = this.state.markerClusterer;
 
     const google = window.google;
+
     // Loading positions from backend
     Service.getPositions(map.getBounds(),
       positions => {
         console.log("Total load: "+positions.length);
-      // Remove old markers that are not inside the view
-      for (var key in markers) {
-          if (markers.hasOwnProperty(key)) {
-              if(!this.isVisible(markers[key], map)){
-                console.log("removing "+key)
-                markerClusterer.removeMarker(markers[key]);
-                delete markers[key];
-              }
-          }
-      }
 
-      // Check if it is not already there, if not add it
-      var my_marks = []
-      positions.map(function(position, i) {
-          if (!(position.id in markers)){
-            console.log("Add "+position.id)
-            var markTmp =  new google.maps.Marker({
-              position: new google.maps.LatLng({
-                lat: parseFloat(position.latitude), lng: parseFloat(position.longitude)}),
-              label: position.app_id
-            });
-            markers[position.id] = markTmp;
-            my_marks.push(markTmp);
-          }
-      });
+        // Remove old markers that are not inside the view
+        for (var key in markers) {
+            if (markers.hasOwnProperty(key)) {
+                if(!this.isVisible(markers[key], map)){
+                  console.log("removing "+key)
+                  markerClusterer.removeMarker(markers[key]);
+                  delete markers[key];
+                }
+            }
+        }
 
-      // Now I have all the markers
-      markerClusterer.addMarkers(my_marks);
-      this.setState({
-        markers: markers
-      });
+        // Check if it is not already there, if not add it
+        var my_marks = []
+        positions.map(function(position, i) {
+            if (!(position.id in markers)){
+              console.log("Add "+position.id)
+              var markTmp =  new google.maps.Marker({
+                position: new google.maps.LatLng({
+                  lat: parseFloat(position.latitude), lng: parseFloat(position.longitude)}),
+                label: position.app_id,
+                icon: icons.getIcon(position.app_id),
+              });
+              markers[position.id] = markTmp;
+              my_marks.push(markTmp);
+            }
+        });
+
+        // Now I have all the markers
+        markerClusterer.addMarkers(my_marks);
+        this.setState({
+          markers: markers
+        });
     });
   }
+
   isVisible(marker, map){
-  return map.getBounds().contains(marker.getPosition());
+    return map.getBounds().contains(marker.getPosition());
   }
+
   render(){
     return (
-    <div>
-      <div ref="map" style={{height: '400px', width: '600px'}}></div>
-      { !this.map && <div className="center-md">Loading...</div> }
-    </div>
+      <Grid>
+      <Grid.Row columns={2}>
+        <Grid.Column width={13}>
+          <div ref="map" style={{height: '400px', width: '100%'}}></div>
+            { !this.state.map && <div className="center-md">Loading...</div> }
+        </Grid.Column>
+        <Grid.Column width={3}>
+          Legend
+        </Grid.Column>
+      </Grid.Row>
+      </Grid>
     )
   }
 }
@@ -115,9 +131,3 @@ export default scriptLoader(
   'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js',
   'https://maps.googleapis.com/maps/api/js?key=AIzaSyDiAJOD4m26OSbueUlIZY9xkhDOKx0tZ10',
 )(MapContainer)
-
-function getRandom(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
-}
