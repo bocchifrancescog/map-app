@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 import json
-from urllib2 import urlopen,URLError
+
+from django.core.exceptions import ValidationError
+from urllib2 import urlopen, URLError
 from django.db import models
+
 
 class DownloadLocationTime(models.Model):
     """
@@ -16,23 +19,27 @@ class DownloadLocationTime(models.Model):
     country = models.CharField(max_length=50, null=True, blank=True)
 
     def __unicode__(self):
-        return "%s - %s - %s - %s - %s" % (self.longitude, self.latitude, \
-               self.app_id, self.downloaded_at, self.country)
+        return "%s - %s - %s - %s - %s" % (
+            self.longitude, self.latitude, self.app_id, self.downloaded_at, self.country)
 
-    def save(self,*args, **kwargs):
+    def clean(self):
         """
-        overwrite save in order to set 'country' given a longitude
+         overwrite clean in order to set 'country' given a longitude
         and latitude
         """
         country = DownloadLocationTime.get_country(
             self.latitude, self.longitude)
 
         if country is None:
-            raise Exception("Latitude and Longitude "
-                            "provided do not belong to any country")
+            raise ValidationError(
+                {
+                    'latitude': ["The provided coordinates do not correspond to a valid location."],
+                    'longitude': ["The provided coordinates do not correspond to a valid location."]
+                })
         else:
             self.country = country
-            super(DownloadLocationTime, self).save(*args, **kwargs)
+
+        super(DownloadLocationTime, self).clean()
 
     @staticmethod
     def get_country(lat, lon):
@@ -55,7 +62,7 @@ class DownloadLocationTime(models.Model):
                 print(c)
                 if "country" in c['types']:
                     country = c['long_name']
-        except URLError, e:
-            raise Exception("There was an error google api call: %r" % e)
+        except Exception as e:
+            return None
 
         return country

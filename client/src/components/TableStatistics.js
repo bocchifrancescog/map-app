@@ -1,24 +1,26 @@
 import React from 'react'
-
-import { Table, Button, Header } from 'semantic-ui-react'
 import ReactTable from 'react-table'
 import 'react-table/react-table.css'
+import { Button, Header } from 'semantic-ui-react'
 
+/**
+ * Renders statistics info in a table
+ */
 class TableStatistics extends React.Component {
 
-  getHeader(firstColumn, appIds) {
-    var res = [firstColumn];
-    appIds.map(function(col, j){
-        res.push(col.app_id);
-      });
-    return res;
-  }
+  /**
+   * Builds the information for every column in the table
+   * @param appIds List of app ids
+   * @param firstColumn Name of the first column
+   * @param fieldName accessor name in the dictinary of data
+   * for the first column
+   */
   getColumns(appIds, firstColumn, fieldName){
     var cols = [{
         Header: () => <h4 className="ui header"> {firstColumn}</h4>,
         accessor: fieldName,
       }]
-    appIds.map(function(col, j){
+    appIds.forEach(function(col, j){
         cols.push({
           Header: () => <h4 className="ui header small">{col.app_id} </h4>,
           accessor: 'counts.'+col.app_id
@@ -35,7 +37,6 @@ class TableStatistics extends React.Component {
     const data = this.props.data;
     const title = this.props.title;
     const columns = this.getColumns(appIds, firstColumn, fieldName);
-
 
         return (
           <div>

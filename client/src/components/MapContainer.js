@@ -6,6 +6,9 @@ import MapHelper from './MapHelper'
 import Config from '../Config'
 import { Header, Grid } from 'semantic-ui-react'
 
+/**
+ * This class is resposible to render the map of the downloads
+ */
 class MapContainer extends React.Component {
   constructor(props){
     super(props);
@@ -94,7 +97,7 @@ class MapContainer extends React.Component {
 
         // Check if it is not already there, if not add it
         var new_markers = []
-        positions.map(function(position, i) {
+        positions.forEach(function(position, i) {
             if (!(position.id in markers)){
               var marker = MapHelper.createMarker(
                 google, map, position, icons.getIcon(position.app_id)['url']);

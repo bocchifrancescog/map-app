@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Container, Grid } from 'semantic-ui-react';
+import { Header, Container } from 'semantic-ui-react';
 import MapContainer from './MapContainer';
 import Statistics from './Statistics';
 

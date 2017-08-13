@@ -1,3 +1,12 @@
+/**
+ * Set of functions to interact with the backend
+ */
+
+/**
+ * Performs a get to api/map/downloads/ and returns a list of positions
+ * @param bounds: bounds of the view
+ * @param cb: Success callback
+ */
 function getPositions(bounds, cb) {
   var latMax = bounds.getNorthEast().lat();
   var latMin= bounds.getSouthWest().lat();
@@ -5,7 +14,7 @@ function getPositions(bounds, cb) {
   var lngMin = bounds.getSouthWest().lng();
 
   var url = 'api/map/downloads/?';
-  var url =url + 'latMax='+latMax+'&latMin='+latMin+'&lngMax='+lngMax+'&lngMin='+lngMin+'';
+  url = url + 'latMax='+latMax+'&latMin='+latMin+'&lngMax='+lngMax+'&lngMin='+lngMin+'';
 
   return fetch(url, {
     accept: "application/json"
@@ -15,7 +24,11 @@ function getPositions(bounds, cb) {
     .then(cb);
 }
 
-function getDownloadsByCountry(query, cb) {
+/**
+ * Returns the downloads by country
+ * @param cb: Success callback
+ */
+function getDownloadsByCountry(cb) {
   return fetch('api/map/downloads_by_country', {
     accept: "application/json"
   })
@@ -24,7 +37,11 @@ function getDownloadsByCountry(query, cb) {
     .then(cb);
 }
 
-function getAppIds(query, cb) {
+/**
+ * Returns the list of apps
+ * @param cb: Success callback
+ */
+function getAppIds(cb) {
   return fetch('api/map/app_ids', {
     accept: "application/json"
   })
@@ -33,7 +50,11 @@ function getAppIds(query, cb) {
     .then(cb);
 }
 
-function getDownloadsByTime(query, cb) {
+/**
+ * Returns the downloads by time
+ * @param cb: Success callback
+ */
+function getDownloadsByTime(cb) {
   return fetch('api/map/downloads_by_time', {
     accept: "application/json"
   })
@@ -49,12 +70,10 @@ function checkStatus(response) {
   const error = new Error(`HTTP Error ${response.statusText}`);
   error.status = response.statusText;
   error.response = response;
-  console.log(error);
   throw error;
 }
 
 function parseJSON(response) {
-  //console.log(response.json());
   return response.json();
 }
 

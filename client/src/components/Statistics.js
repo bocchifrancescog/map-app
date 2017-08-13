@@ -1,9 +1,11 @@
 import React from 'react'
 import Service from './Service'
 import TableStatistics from './TableStatistics'
-import { Header, Grid } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 
-
+/**
+ * Class resposible to render statistics about the downloads
+ */
 class MapContainer extends React.Component {
   constructor(props){
     super(props);
@@ -16,21 +18,25 @@ class MapContainer extends React.Component {
     this.loadDataFromServer();
   }
 
+  /**
+   * Load data from the backed: appIds, downloads by time and
+   * downloads by country
+   */
   loadDataFromServer(){
 
-    Service.getAppIds('query', data => {
+    Service.getAppIds(data => {
         this.setState({
           appIds: data
         });
     });
 
-    Service.getDownloadsByCountry('query', data => {
+    Service.getDownloadsByCountry(data => {
         this.setState({
           byCountry: data
         });
     });
 
-    Service.getDownloadsByTime('query', data => {
+    Service.getDownloadsByTime(data => {
         this.setState({
           byTime: data
         });
@@ -43,7 +49,6 @@ class MapContainer extends React.Component {
     const byCountry = this.state.byCountry;
     const byTime = this.state.byTime;
     const appIds = this.state.appIds;
-
 
     return (
       <Grid>
