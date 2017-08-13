@@ -10,7 +10,7 @@ In order to get a google api key, please visit: https://developers.google.com/ma
 
 ## start server
 cd server
-python manage runserver 8000
+python manage runserver 3001
 
 ## start client
 cd client

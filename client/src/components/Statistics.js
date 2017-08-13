@@ -12,7 +12,8 @@ class MapContainer extends React.Component {
     this.state = {
         byCountry : [],
         byTime: [],
-        appIds : []
+        appIds : [],
+        error: false,
     }
 
     this.loadDataFromServer();
@@ -28,20 +29,31 @@ class MapContainer extends React.Component {
         this.setState({
           appIds: data
         });
-    });
+    }).catch(error => {
+        this.setState({
+          error: true
+        })
+     });
 
     Service.getDownloadsByCountry(data => {
         this.setState({
           byCountry: data
         });
-    });
+    }).catch(error => {
+        this.setState({
+          error: true
+        })
+     });
 
     Service.getDownloadsByTime(data => {
         this.setState({
           byTime: data
         });
-    });
-
+    }).catch(error => {
+        this.setState({
+          error: true
+        })
+     });
   }
 
 
@@ -52,6 +64,14 @@ class MapContainer extends React.Component {
 
     return (
       <Grid>
+        {this.state.error &&
+            <Grid.Column width={16} >
+                <div className="ui error message">
+                    "Ops! There was an error while loading the data for these tables.
+                    We'll try to fix it as soon as possible."
+                </div>
+            </Grid.Column>
+        }
         <Grid.Row columns={2} className="stackable">
           <Grid.Column>
             <TableStatistics

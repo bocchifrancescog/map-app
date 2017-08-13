@@ -17,6 +17,7 @@ class MapContainer extends React.Component {
         markerClusterer: null,
         markers: {},
         icons: new IconMarkers(),
+        error: false
     }
 
   }
@@ -110,6 +111,10 @@ class MapContainer extends React.Component {
         this.setState({
           markers: markers
         });
+    }).catch(error => {
+        this.setState({
+          error: true
+        });
     });
   }
 
@@ -135,6 +140,16 @@ class MapContainer extends React.Component {
 
     return (
       <Grid>
+
+        {this.state.error &&
+            <Grid.Column width={16} >
+                <div className="ui error message">
+                    "Ops! There was an error while loading the data for the map.
+                    We'll try to fix it as soon as possible."
+                </div>
+            </Grid.Column>
+        }
+
         <Grid.Row columns={2} className="stackable">
           <Grid.Column width={13}>
             <div ref="map" style={{height: '400px', width: '100%'}}></div>
