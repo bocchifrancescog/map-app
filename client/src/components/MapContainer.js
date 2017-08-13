@@ -88,7 +88,6 @@ class MapContainer extends React.Component {
         for (var key in markers) {
             if (markers.hasOwnProperty(key)) {
                 if(!this.isVisible(markers[key], map)){
-                  console.log("removing "+key)
                   markerClusterer.removeMarker(markers[key]);
                   delete markers[key];
                 }
