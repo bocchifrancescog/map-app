@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
+import { Header, Container, Grid } from 'semantic-ui-react';
 import MapContainer from './MapContainer';
 import Statistics from './Statistics';
-import { Header, Container, Grid } from 'semantic-ui-react';
 
 class Home extends Component {
   render() {
     return (
       <div>
-          <Header as='h1' textAlign='left'>
-            <Header.Content>
+        <div className="borderless ui  inverted blue fixed pointing menu">
+          <div className="item">
+            <Header className="inverted">
+              <i className="marker icon"></i>
               Downloads
-            </Header.Content>
-          </Header>
-          <Container>
-            <MapContainer />
+            </Header>
+          </div>
+          </div>
+          <Container className="main-content">
+            <MapContainer
+              center={{lat: 45.464200, lng: 9.190000}}
+              zoom={4}/>
             <Statistics />
           </Container>
       </div>

@@ -47,12 +47,7 @@ class MapContainer extends React.Component {
 
     return (
       <Grid>
-        <Grid.Row>
-          <Grid.Column>
-            <Header as='h2'>Statistics </Header>
-          </Grid.Column>
-        </Grid.Row>
-        <Grid.Row columns={2}>
+        <Grid.Row columns={2} className="stackable">
           <Grid.Column>
             <TableStatistics
                 firstColumn="Country"
@@ -60,6 +55,7 @@ class MapContainer extends React.Component {
                 appIds={appIds}
                 data={byCountry}
                 showPagination={true}
+                title="Downloads by Country"
                 />
 
             </Grid.Column>
@@ -69,7 +65,9 @@ class MapContainer extends React.Component {
                 fieldName="label"
                 appIds={appIds}
                 data={byTime}
+                title="Downloads by Time of the Day"
                 showPagination={false}
+
                 />
             </Grid.Column>
         </Grid.Row>

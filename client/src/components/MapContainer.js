@@ -2,6 +2,8 @@ import React from 'react'
 import scriptLoader from 'react-async-script-loader'
 import IconMarkers from './IconMarkers'
 import Service from './Service'
+import MapHelper from './MapHelper'
+import Config from '../Config'
 import { Header, Grid } from 'semantic-ui-react'
 
 class MapContainer extends React.Component {
@@ -35,18 +37,24 @@ class MapContainer extends React.Component {
     }
   }
 
+  /**
+   * Creates a map on the screen
+   */
   createMap(){
     const google = window.google;
+    const center = this.props.center;
+    const zoom = this.props.zoom;
     const map = new google.maps.Map(
         this.refs.map, {
-          center: {lat: 45.464200, lng: 9.190000},
-          zoom: 4
+          center: center,
+          zoom: zoom
     });
 
     this.setState({
       map : map,
       markerClusterer: new window.MarkerClusterer(
-        map, [], {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'})
+        map, [],
+        {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'})
     });
 
     // Every time I change the zoom or the viewport I load only the markers that
@@ -57,8 +65,11 @@ class MapContainer extends React.Component {
 
   }
 
+  /**
+   * Load markers on the map. The markers information a retrieved from the
+   * backend
+   */
   loadMarkers(){
-    console.log("Loading Markers...");
     var map = this.state.map;
     var markers = this.state.markers;
     const icons = this.state.icons;
@@ -69,7 +80,6 @@ class MapContainer extends React.Component {
     // Loading positions from backend
     Service.getPositions(map.getBounds(),
       positions => {
-        console.log("Total load: "+positions.length);
 
         // Remove old markers that are not inside the view
         for (var key in markers) {
@@ -83,29 +93,29 @@ class MapContainer extends React.Component {
         }
 
         // Check if it is not already there, if not add it
-        var my_marks = []
+        var new_markers = []
         positions.map(function(position, i) {
             if (!(position.id in markers)){
-              console.log("Add "+position.id)
-              var markTmp =  new google.maps.Marker({
-                position: new google.maps.LatLng({
-                  lat: parseFloat(position.latitude), lng: parseFloat(position.longitude)}),
-                label: position.app_id,
-                icon: icons.getIcon(position.app_id)['url'],
-              });
-              markers[position.id] = markTmp;
-              my_marks.push(markTmp);
+              var marker = MapHelper.createMarker(
+                google, map, position, icons.getIcon(position.app_id)['url']);
+              markers[position.id] = marker;
+              new_markers.push(marker);
             }
         });
 
         // Now I have all the markers
-        markerClusterer.addMarkers(my_marks);
+        markerClusterer.addMarkers(new_markers);
         this.setState({
           markers: markers
         });
     });
   }
 
+  /**
+   * Returns true if a marker is visible on the map view
+   * @param marker Marker to check
+   * @param map google map
+   */
   isVisible(marker, map){
     return map.getBounds().contains(marker.getPosition());
   }
@@ -113,28 +123,28 @@ class MapContainer extends React.Component {
   render(){
     const iconToColor = this.state.icons.getIconToColor();
     const legendDiv = Object.keys(iconToColor).map((key, index) => (
-          <div key={key} className="item" style={{color:'#'+iconToColor[key]['color']  }}>
-            <i className="large marker middle aligned icon" ></i>
-            <div className="content">
-              <span className="header grey">{key}</span>
-            </div>
-          </div>
-        ));
+      <div key={key} className="item" style={{color:'#'+iconToColor[key]['color']  }}>
+        <i className="large marker middle aligned icon" ></i>
+        <div className="content">
+          <span className="header grey">{key}</span>
+        </div>
+      </div>
+    ));
 
     return (
       <Grid>
-      <Grid.Row columns={2}>
-        <Grid.Column width={13}>
-          <div ref="map" style={{height: '400px', width: '100%'}}></div>
-            { !this.state.map && <div className="center-md">Loading...</div> }
-        </Grid.Column>
-        <Grid.Column width={3}>
-          <Header color="grey"> Legend </Header>
-          <div className="ui relaxed divided list">
-            {legendDiv}
-          </div>
-        </Grid.Column>
-      </Grid.Row>
+        <Grid.Row columns={2} className="stackable">
+          <Grid.Column width={13}>
+            <div ref="map" style={{height: '400px', width: '100%'}}></div>
+              { !this.state.map && <div className="center-md">Loading...</div> }
+          </Grid.Column>
+          <Grid.Column width={3}>
+            <Header color="blue"> Legend </Header>
+            <div className="ui relaxed divided list">
+              {legendDiv}
+            </div>
+          </Grid.Column>
+        </Grid.Row>
       </Grid>
     )
   }
@@ -142,5 +152,5 @@ class MapContainer extends React.Component {
 
 export default scriptLoader(
   'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js',
-  'https://maps.googleapis.com/maps/api/js?key=AIzaSyDiAJOD4m26OSbueUlIZY9xkhDOKx0tZ10',
+  'https://maps.googleapis.com/maps/api/js?key='+Config.API_KEY,
 )(MapContainer)

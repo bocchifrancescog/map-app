@@ -49,7 +49,6 @@ function checkStatus(response) {
   const error = new Error(`HTTP Error ${response.statusText}`);
   error.status = response.statusText;
   error.response = response;
-  console.log("There was an error!!!");
   console.log(error);
   throw error;
 }

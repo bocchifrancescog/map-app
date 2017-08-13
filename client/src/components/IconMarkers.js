@@ -1,6 +1,6 @@
 function IconMarkers(){
   this.base = "http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|"
-  this.colors = ['00CD66', 'FFA500', 'EE0000', '8E388E'];
+  this.colors = ['00CD66', 'a200ff', 'e69598', 'EE0000', '8E388E'];
   this.index = 0;
   this.IconToColor = {};
 
@@ -11,6 +11,7 @@ function IconMarkers(){
   this.colorURL = function(color){
     return this.base + color;
   }
+
   this.getIconToColor = function(){
     return this.IconToColor;
   }
