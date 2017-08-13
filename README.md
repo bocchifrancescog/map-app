@@ -20,3 +20,5 @@ open browser at http://localhost:3000/
 # tools
 - python 2.7
 - django:  pip install Django==1.11
+
+![Alt text](/screenshots/home.png?raw=true "Home page screenshot")
