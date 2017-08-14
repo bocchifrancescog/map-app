@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  db:
+    image: mysql
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin9999
+
+  server:
+    build:
+      context: .
+      dockerfile: ./docker-files/server/Dockerfile
+    command: python ./map-app/server/manage.py runserver 0.0.0.0:3001
+    volumes:
+      - .:/code
+    ports:
+      - "3001:3001"
+    expose:
+      - "3001"
+    depends_on:
+      - db
+  
+  client:
+    build:
+      context: .
+      dockerfile: ./docker-files/client/Dockerfile
+    command: npm start
+    working_dir: /code/map-app/client/
+    volumes:
+      - .:/code
+    ports:
+      - "3000:3000"
+    expose:
+      - "3000"
+    depends_on:
+      - server
