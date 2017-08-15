@@ -6,7 +6,7 @@
     "longitude": "9.190000",
     "latitude": "45.464200",
     "app_id": "IOS_ALERT",
-    "downloaded_at": "2017-08-09T12:56:08Z",
+    "downloaded_at": "2017-08-09T12:56:08",
     "country": "Italy"
   }
 },
@@ -17,7 +17,7 @@
     "longitude": "10.211800",
     "latitude": "45.541600",
     "app_id": "IOS_ALERT",
-    "downloaded_at": "2017-08-09T13:00:54Z",
+    "downloaded_at": "2017-08-09T13:00:54",
     "country": "Italy"
   }
 },
@@ -28,7 +28,7 @@
     "longitude": "12.496400",
     "latitude": "41.902800",
     "app_id": "IOS_MATE",
-    "downloaded_at": "2017-08-09T06:00:00Z",
+    "downloaded_at": "2017-08-09T06:00:00",
     "country": "Italy"
   }
 },
@@ -39,7 +39,7 @@
     "longitude": "2.352200",
     "latitude": "48.856600",
     "app_id": "IOS_ALERT",
-    "downloaded_at": "2017-08-10T12:56:50Z",
+    "downloaded_at": "2017-08-10T12:56:50",
     "country": "France"
   }
 },
@@ -50,7 +50,7 @@
     "longitude": "13.405000",
     "latitude": "52.520000",
     "app_id": "IOS_ALERT",
-    "downloaded_at": "2017-08-10T00:00:00Z",
+    "downloaded_at": "2017-08-10T00:00:00",
     "country": "Germany"
   }
 },
@@ -61,7 +61,7 @@
     "longitude": "9.993700",
     "latitude": "53.551100",
     "app_id": "IOS_MATE",
-    "downloaded_at": "2017-08-10T06:00:00Z",
+    "downloaded_at": "2017-08-10T06:00:00",
     "country": "Germany"
   }
 },
@@ -72,7 +72,7 @@
     "longitude": "9.993600",
     "latitude": "53.251100",
     "app_id": "IOS_MATE",
-    "downloaded_at": "2017-08-11T23:00:00Z",
+    "downloaded_at": "2017-08-11T23:00:00",
     "country": "Germany"
   }
 },
@@ -83,7 +83,7 @@
     "longitude": "74.005900",
     "latitude": "40.112800",
     "app_id": "IOS_ALERT",
-    "downloaded_at": "2017-08-11T19:09:11Z",
+    "downloaded_at": "2017-08-11T19:09:11",
     "country": "Kyrgyzstan"
   }
 },
@@ -94,7 +94,7 @@
     "longitude": "74.005900",
     "latitude": "40.712800",
     "app_id": "IOS_MATE",
-    "downloaded_at": "2017-08-11T18:00:00Z",
+    "downloaded_at": "2017-08-11T18:00:00",
     "country": "Kyrgyzstan"
   }
 },
@@ -105,7 +105,7 @@
     "longitude": "-74.005900",
     "latitude": "40.712800",
     "app_id": "APP_3",
-    "downloaded_at": "2017-08-11T12:11:29Z",
+    "downloaded_at": "2017-08-11T12:11:29",
     "country": "United States"
   }
 },
@@ -116,7 +116,7 @@
     "longitude": "10.511800",
     "latitude": "45.041600",
     "app_id": "IOS_ALERT",
-    "downloaded_at": "2017-08-11T22:00:00Z",
+    "downloaded_at": "2017-08-11T22:00:00",
     "country": "Italy"
   }
 },
@@ -127,7 +127,7 @@
     "longitude": "6.260300",
     "latitude": "53.349800",
     "app_id": "APP_3",
-    "downloaded_at": "2017-08-12T14:21:50Z",
+    "downloaded_at": "2017-08-12T14:21:50",
     "country": "Netherlands"
   }
 },
@@ -138,7 +138,7 @@
     "longitude": "-6.260300",
     "latitude": "53.349800",
     "app_id": "APP_3",
-    "downloaded_at": "2017-08-12T18:00:00Z",
+    "downloaded_at": "2017-08-12T18:00:00",
     "country": "Ireland"
   }
 },
@@ -149,7 +149,7 @@
     "longitude": "0.127800",
     "latitude": "52.507400",
     "app_id": "APP_3",
-    "downloaded_at": "2017-08-12T14:33:49Z",
+    "downloaded_at": "2017-08-12T14:33:49",
     "country": "United Kingdom"
   }
 },
@@ -160,7 +160,7 @@
     "longitude": "0.227800",
     "latitude": "51.507400",
     "app_id": "APP_3",
-    "downloaded_at": "2017-08-12T21:00:00Z",
+    "downloaded_at": "2017-08-12T21:00:00",
     "country": "United Kingdom"
   }
 },
@@ -171,7 +171,7 @@
     "longitude": "10.000000",
     "latitude": "10.000000",
     "app_id": "IOS_ALERT",
-    "downloaded_at": "2017-08-13T14:05:47Z",
+    "downloaded_at": "2017-08-13T14:05:47",
     "country": "Nigeria"
   }
 },
@@ -182,7 +182,7 @@
     "longitude": "11.000000",
     "latitude": "11.000000",
     "app_id": "IOS_MATE",
-    "downloaded_at": "2017-08-13T20:29:39Z",
+    "downloaded_at": "2017-08-13T20:29:39",
     "country": "Nigeria"
   }
 },
@@ -193,7 +193,7 @@
     "longitude": "40.416800",
     "latitude": "3.203800",
     "app_id": "IOS_ALERT",
-    "downloaded_at": "2017-08-13T14:41:53Z",
+    "downloaded_at": "2017-08-13T14:41:53",
     "country": "Kenya"
   }
 },
@@ -204,7 +204,7 @@
     "longitude": "-2.703800",
     "latitude": "40.416800",
     "app_id": "IOS_MATE",
-    "downloaded_at": "2017-08-13T22:42:07Z",
+    "downloaded_at": "2017-08-13T22:42:07",
     "country": "Spain"
   }
 },
@@ -215,7 +215,7 @@
     "longitude": "-3.703800",
     "latitude": "40.416800",
     "app_id": "APP_3",
-    "downloaded_at": "2017-08-13T14:42:26Z",
+    "downloaded_at": "2017-08-13T14:42:26",
     "country": "Spain"
   }
 },
@@ -226,7 +226,7 @@
     "longitude": "11.354800",
     "latitude": "46.498300",
     "app_id": "IOS_ALERT",
-    "downloaded_at": "2017-08-14T20:15:20Z",
+    "downloaded_at": "2017-08-14T20:15:20",
     "country": "Italy"
   }
 },
@@ -237,7 +237,7 @@
     "longitude": "12.354800",
     "latitude": "46.498300",
     "app_id": "IOS_MATE",
-    "downloaded_at": "2017-08-14T20:16:29Z",
+    "downloaded_at": "2017-08-14T20:16:29",
     "country": "Italy"
   }
 }

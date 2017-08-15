@@ -1,0 +1,12 @@
+# node
+map-app/client/node_modules/**/*
+map-app/client/node_modules
+**/npm-debug.log
+
+# Python
+**/*.pyc
+__pycache__/
+.idea/
+
+# git
+.git

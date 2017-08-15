@@ -22,6 +22,10 @@ class DownloadLocationTime(models.Model):
         return "%s - %s - %s - %s - %s" % (
             self.longitude, self.latitude, self.app_id, self.downloaded_at, self.country)
 
+    def save(self, *args, **kwargs):
+        self.clean()
+        super(DownloadLocationTime, self).save(*args, **kwargs)
+
     def clean(self):
         """
          overwrite clean in order to set 'country' given a longitude
@@ -52,14 +56,11 @@ class DownloadLocationTime(models.Model):
         country = None
         url = "http://maps.googleapis.com/maps/api/geocode/json?"
         url += "latlng=%s,%s&sensor=false" % (lat, lon)
-        print("reading...")
         try:
             v = urlopen(url, timeout=1.5).read()
             j = json.loads(v)
-            print(j)
             components = j['results'][0]['address_components']
             for c in components:
-                print(c)
                 if "country" in c['types']:
                     country = c['long_name']
         except Exception as e:

@@ -79,9 +79,6 @@ def downloads_by_country(request):
             # same country as before, but a different app_id (this is valid because they ordered by country)
             data[index]['counts'][dt['app_id']] = dt['count']
 
-        print(data[index])
-        print("--")
-
     json_data = json.dumps(data, cls=DjangoJSONEncoder)
     return HttpResponse(json_data, content_type='application/json')
 
