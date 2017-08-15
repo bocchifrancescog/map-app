@@ -2,6 +2,6 @@
  * Config File for the frontend
  */
 
-const API_KEY = 'AIzaSyDiAJOD4m26OSbueUlIZY9xkhDOKx0tZ10';
+const API_KEY = 'YOUR GOOGLE API KEY GOES HERE';
 const Config = { API_KEY };
 export default Config;
