@@ -2,21 +2,20 @@
 Web Application that shows app downloads on a map
 
 # setup
-- Open map-app/client/src/Config.js file and assign your google API key to the variable API_KEY. 
+1. cd into the main folder
+2. Open /map-app/client/src/Config.js file and assign your google API key to the variable API_KEY. 
 
 Ex:
 const API_KEY = 'MyGoogleApiKey';
 
 To know how to get a google api key, please visit: https://developers.google.com/maps/documentation/javascript/get-api-key
 
-
-### setup
-
-- docker-compose build
-- docker-compose up
+3. docker-compose build
+4. docker-compose up
 
 On another console
-- docker-compose exec server ./map-app/server/manage.py migrate
+5. cd into the main folder
+6. docker-compose exec server ./map-app/server/manage.py migrate
 - docker-compose exec server ./map-app/server/manage.py loaddata ./map-app/server/map/fixtures/auth_initial_data.json
 - docker-compose exec server ./map-app/server/manage.py loaddata ./map-app/server/map/fixtures/map_inital_data.json
 
