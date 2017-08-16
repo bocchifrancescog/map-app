@@ -18,7 +18,7 @@ class Home extends Component {
           <Container className="main-content">
             <MapContainer
               center={{lat: 45.464200, lng: 9.190000}}
-              zoom={4}/>
+              zoom={5}/>
             <Statistics />
           </Container>
       </div>

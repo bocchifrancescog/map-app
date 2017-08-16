@@ -1,0 +1,2246 @@
+[
+{
+  "model": "map.downloadlocationtime",
+  "pk": 1,
+  "fields": {
+    "longitude": "9.190000",
+    "latitude": "45.464200",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-09T12:56:08",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 2,
+  "fields": {
+    "longitude": "10.211800",
+    "latitude": "45.541600",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-09T13:00:54",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 3,
+  "fields": {
+    "longitude": "12.496400",
+    "latitude": "41.902800",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-09T06:00:00",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 4,
+  "fields": {
+    "longitude": "2.352200",
+    "latitude": "48.856600",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-10T12:56:50",
+    "country": "France"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 5,
+  "fields": {
+    "longitude": "13.405000",
+    "latitude": "52.520000",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-10T00:00:00",
+    "country": "Germany"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 6,
+  "fields": {
+    "longitude": "9.993700",
+    "latitude": "53.551100",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-10T06:00:00",
+    "country": "Germany"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 7,
+  "fields": {
+    "longitude": "9.993600",
+    "latitude": "53.251100",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-11T23:00:00",
+    "country": "Germany"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 8,
+  "fields": {
+    "longitude": "74.005900",
+    "latitude": "40.112800",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-11T19:09:11",
+    "country": "Kyrgyzstan"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 9,
+  "fields": {
+    "longitude": "74.005900",
+    "latitude": "40.712800",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-11T18:00:00",
+    "country": "Kyrgyzstan"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 10,
+  "fields": {
+    "longitude": "-74.005900",
+    "latitude": "40.712800",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-11T12:11:29",
+    "country": "United States"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 11,
+  "fields": {
+    "longitude": "10.511800",
+    "latitude": "45.041600",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-11T22:00:00",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 12,
+  "fields": {
+    "longitude": "6.260300",
+    "latitude": "53.349800",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-12T14:21:50",
+    "country": "Netherlands"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 13,
+  "fields": {
+    "longitude": "-6.260300",
+    "latitude": "53.349800",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-12T18:00:00",
+    "country": "Ireland"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 14,
+  "fields": {
+    "longitude": "0.127800",
+    "latitude": "52.507400",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-12T14:33:49",
+    "country": "United Kingdom"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 15,
+  "fields": {
+    "longitude": "0.227800",
+    "latitude": "51.507400",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-12T21:00:00",
+    "country": "United Kingdom"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 16,
+  "fields": {
+    "longitude": "10.000000",
+    "latitude": "10.000000",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-13T14:05:47",
+    "country": "Nigeria"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 17,
+  "fields": {
+    "longitude": "11.000000",
+    "latitude": "11.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-13T20:29:39",
+    "country": "Nigeria"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 18,
+  "fields": {
+    "longitude": "40.416800",
+    "latitude": "3.203800",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-13T14:41:53",
+    "country": "Kenya"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 19,
+  "fields": {
+    "longitude": "-2.703800",
+    "latitude": "40.416800",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-13T22:42:07",
+    "country": "Spain"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 20,
+  "fields": {
+    "longitude": "-3.703800",
+    "latitude": "40.416800",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-13T14:42:26",
+    "country": "Spain"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 21,
+  "fields": {
+    "longitude": "11.354800",
+    "latitude": "46.498300",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-14T20:15:20",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 22,
+  "fields": {
+    "longitude": "12.354800",
+    "latitude": "46.498300",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-14T20:16:29",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 23,
+  "fields": {
+    "longitude": "13.360000",
+    "latitude": "37.180000",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T13:09:05",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 24,
+  "fields": {
+    "longitude": "11.210000",
+    "latitude": "44.300000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T12:00:00",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 25,
+  "fields": {
+    "longitude": "11.200000",
+    "latitude": "46.300000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T13:12:45",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 26,
+  "fields": {
+    "longitude": "9.050000",
+    "latitude": "45.480000",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T06:00:00",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 27,
+  "fields": {
+    "longitude": "10.020000",
+    "latitude": "45.080000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T13:14:06",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 28,
+  "fields": {
+    "longitude": "9.000000",
+    "latitude": "46.000000",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T14:22:01.778",
+    "country": "Switzerland"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 29,
+  "fields": {
+    "longitude": "11.000000",
+    "latitude": "45.000000",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T14:22:01.971",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 30,
+  "fields": {
+    "longitude": "9.000000",
+    "latitude": "46.000000",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T14:22:48.019",
+    "country": "Switzerland"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 31,
+  "fields": {
+    "longitude": "0.000000",
+    "latitude": "46.000000",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T14:22:48.256",
+    "country": "France"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 32,
+  "fields": {
+    "longitude": "12.000000",
+    "latitude": "52.000000",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T14:22:48.454",
+    "country": "Germany"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 33,
+  "fields": {
+    "longitude": "9.000000",
+    "latitude": "51.000000",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T14:22:48.612",
+    "country": "Germany"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 34,
+  "fields": {
+    "longitude": "8.000000",
+    "latitude": "54.000000",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T14:22:48.724",
+    "country": "Germany"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 35,
+  "fields": {
+    "longitude": "73.000000",
+    "latitude": "40.000000",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T14:22:48.859",
+    "country": "Kyrgyzstan"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 36,
+  "fields": {
+    "longitude": "73.000000",
+    "latitude": "40.000000",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T14:22:49.032",
+    "country": "Kyrgyzstan"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 37,
+  "fields": {
+    "longitude": "-74.000000",
+    "latitude": "41.000000",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T14:22:49.139",
+    "country": "United States"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 38,
+  "fields": {
+    "longitude": "10.000000",
+    "latitude": "46.000000",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T14:22:49.349",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 39,
+  "fields": {
+    "longitude": "5.000000",
+    "latitude": "52.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:39.172",
+    "country": "Netherlands"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 40,
+  "fields": {
+    "longitude": "16.000000",
+    "latitude": "49.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:39.452",
+    "country": "Czechia"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 41,
+  "fields": {
+    "longitude": "21.000000",
+    "latitude": "31.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:39.630",
+    "country": "Libya"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 42,
+  "fields": {
+    "longitude": "-7.000000",
+    "latitude": "54.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:39.824",
+    "country": "Ireland"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 43,
+  "fields": {
+    "longitude": "16.000000",
+    "latitude": "46.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:40.036",
+    "country": "Croatia"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 44,
+  "fields": {
+    "longitude": "9.000000",
+    "latitude": "59.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:40.218",
+    "country": "Norway"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 45,
+  "fields": {
+    "longitude": "0.000000",
+    "latitude": "54.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:40.380",
+    "country": "United Kingdom"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 46,
+  "fields": {
+    "longitude": "72.000000",
+    "latitude": "42.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:40.511",
+    "country": "Kyrgyzstan"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 47,
+  "fields": {
+    "longitude": "80.000000",
+    "latitude": "38.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:40.849",
+    "country": "China"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 48,
+  "fields": {
+    "longitude": "-77.000000",
+    "latitude": "46.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:41.051",
+    "country": "Canada"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 49,
+  "fields": {
+    "longitude": "17.000000",
+    "latitude": "46.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:41.256",
+    "country": "Croatia"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 50,
+  "fields": {
+    "longitude": "2.000000",
+    "latitude": "46.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:41.718",
+    "country": "France"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 51,
+  "fields": {
+    "longitude": "6.000000",
+    "latitude": "7.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:41.829",
+    "country": "Nigeria"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 52,
+  "fields": {
+    "longitude": "14.000000",
+    "latitude": "18.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:42.052",
+    "country": "Niger"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 53,
+  "fields": {
+    "longitude": "-7.000000",
+    "latitude": "41.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:42.346",
+    "country": "Portugal"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 54,
+  "fields": {
+    "longitude": "-7.000000",
+    "latitude": "34.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:42.589",
+    "country": "Morocco"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 55,
+  "fields": {
+    "longitude": "14.000000",
+    "latitude": "51.000000",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T14:23:42.769",
+    "country": "Germany"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 56,
+  "fields": {
+    "longitude": "16.048016",
+    "latitude": "39.465975",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T19:30:13.047",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 57,
+  "fields": {
+    "longitude": "12.463115",
+    "latitude": "48.946538",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T19:30:13.047",
+    "country": "Germany"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 58,
+  "fields": {
+    "longitude": "18.454202",
+    "latitude": "51.608918",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T19:30:13.047",
+    "country": "Poland"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 59,
+  "fields": {
+    "longitude": "15.789324",
+    "latitude": "59.251259",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T19:30:13.047",
+    "country": "Sweden"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 60,
+  "fields": {
+    "longitude": "83.025786",
+    "latitude": "40.378883",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T19:30:13.047",
+    "country": "China"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 61,
+  "fields": {
+    "longitude": "82.136943",
+    "latitude": "43.172667",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T19:30:13.047",
+    "country": "China"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 62,
+  "fields": {
+    "longitude": "14.411025",
+    "latitude": "42.586292",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T19:30:13.047",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 63,
+  "fields": {
+    "longitude": "8.611048",
+    "latitude": "56.564559",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T19:30:13.047",
+    "country": "Denmark"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 64,
+  "fields": {
+    "longitude": "12.289975",
+    "latitude": "17.227740",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T19:30:13.047",
+    "country": "Niger"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 65,
+  "fields": {
+    "longitude": "9.591731",
+    "latitude": "45.945412",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 66,
+  "fields": {
+    "longitude": "9.749527",
+    "latitude": "44.280802",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 67,
+  "fields": {
+    "longitude": "1.081937",
+    "latitude": "47.801526",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "France"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 68,
+  "fields": {
+    "longitude": "12.207803",
+    "latitude": "52.502099",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "Germany"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 69,
+  "fields": {
+    "longitude": "8.647878",
+    "latitude": "53.380556",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "Germany"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 70,
+  "fields": {
+    "longitude": "9.749972",
+    "latitude": "52.894737",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "Germany"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 71,
+  "fields": {
+    "longitude": "73.591821",
+    "latitude": "39.677725",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "Kyrgyzstan"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 72,
+  "fields": {
+    "longitude": "74.268541",
+    "latitude": "39.075474",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "China"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 73,
+  "fields": {
+    "longitude": "9.992473",
+    "latitude": "44.803553",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 74,
+  "fields": {
+    "longitude": "5.849647",
+    "latitude": "52.839365",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "Netherlands"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 75,
+  "fields": {
+    "longitude": "-6.624276",
+    "latitude": "53.219164",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "Ireland"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 76,
+  "fields": {
+    "longitude": "0.676398",
+    "latitude": "52.950064",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "United Kingdom"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 77,
+  "fields": {
+    "longitude": "9.357179",
+    "latitude": "10.693213",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "Nigeria"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 78,
+  "fields": {
+    "longitude": "11.954581",
+    "latitude": "10.973806",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "Nigeria"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 79,
+  "fields": {
+    "longitude": "40.299719",
+    "latitude": "3.349233",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "Kenya"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 80,
+  "fields": {
+    "longitude": "-1.057108",
+    "latitude": "40.707213",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "Spain"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 81,
+  "fields": {
+    "longitude": "-3.247733",
+    "latitude": "40.907850",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "Spain"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 82,
+  "fields": {
+    "longitude": "11.934680",
+    "latitude": "45.706221",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T23:30:06.377",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 83,
+  "fields": {
+    "longitude": "8.779502",
+    "latitude": "46.013702",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:19.317",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 84,
+  "fields": {
+    "longitude": "8.545271",
+    "latitude": "45.200132",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:19.317",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 85,
+  "fields": {
+    "longitude": "11.134195",
+    "latitude": "45.065523",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:19.317",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 86,
+  "fields": {
+    "longitude": "10.297345",
+    "latitude": "46.642450",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:19.317",
+    "country": "Switzerland"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 87,
+  "fields": {
+    "longitude": "12.910576",
+    "latitude": "47.501587",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:19.317",
+    "country": "Austria"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 88,
+  "fields": {
+    "longitude": "11.211743",
+    "latitude": "44.620823",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:19.317",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 89,
+  "fields": {
+    "longitude": "11.324039",
+    "latitude": "46.821981",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:19.317",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 90,
+  "fields": {
+    "longitude": "7.811328",
+    "latitude": "45.865003",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:19.317",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 91,
+  "fields": {
+    "longitude": "11.633980",
+    "latitude": "45.501034",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:19.317",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 92,
+  "fields": {
+    "longitude": "10.117517",
+    "latitude": "44.316477",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:19.317",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 93,
+  "fields": {
+    "longitude": "10.168664",
+    "latitude": "47.765105",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:19.317",
+    "country": "Germany"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 94,
+  "fields": {
+    "longitude": "10.938575",
+    "latitude": "43.170671",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:19.317",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 95,
+  "fields": {
+    "longitude": "10.416494",
+    "latitude": "44.860043",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:19.317",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 96,
+  "fields": {
+    "longitude": "10.551034",
+    "latitude": "44.577398",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:19.317",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 97,
+  "fields": {
+    "longitude": "10.804556",
+    "latitude": "43.051114",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 98,
+  "fields": {
+    "longitude": "9.369151",
+    "latitude": "46.407565",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 99,
+  "fields": {
+    "longitude": "11.960488",
+    "latitude": "44.770413",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 100,
+  "fields": {
+    "longitude": "13.782413",
+    "latitude": "44.753369",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Croatia"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 101,
+  "fields": {
+    "longitude": "12.940335",
+    "latitude": "36.909382",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 102,
+  "fields": {
+    "longitude": "12.586408",
+    "latitude": "45.733442",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 103,
+  "fields": {
+    "longitude": "11.190966",
+    "latitude": "45.530927",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 104,
+  "fields": {
+    "longitude": "9.847050",
+    "latitude": "43.651791",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 105,
+  "fields": {
+    "longitude": "8.165229",
+    "latitude": "44.337303",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 106,
+  "fields": {
+    "longitude": "10.206623",
+    "latitude": "45.155560",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 107,
+  "fields": {
+    "longitude": "9.576944",
+    "latitude": "44.360157",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 108,
+  "fields": {
+    "longitude": "10.990355",
+    "latitude": "46.662330",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 109,
+  "fields": {
+    "longitude": "8.367835",
+    "latitude": "44.776638",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 110,
+  "fields": {
+    "longitude": "10.379137",
+    "latitude": "43.234242",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 111,
+  "fields": {
+    "longitude": "12.997012",
+    "latitude": "45.631338",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 112,
+  "fields": {
+    "longitude": "6.483899",
+    "latitude": "47.242587",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "France"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 113,
+  "fields": {
+    "longitude": "9.098080",
+    "latitude": "45.603287",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 114,
+  "fields": {
+    "longitude": "9.758356",
+    "latitude": "45.083617",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 115,
+  "fields": {
+    "longitude": "12.920278",
+    "latitude": "42.694969",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 116,
+  "fields": {
+    "longitude": "9.118207",
+    "latitude": "47.981496",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Germany"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 117,
+  "fields": {
+    "longitude": "6.497331",
+    "latitude": "44.950516",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "France"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 118,
+  "fields": {
+    "longitude": "10.300376",
+    "latitude": "45.356006",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 119,
+  "fields": {
+    "longitude": "11.552950",
+    "latitude": "42.340920",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 120,
+  "fields": {
+    "longitude": "8.744603",
+    "latitude": "41.980074",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "France"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 121,
+  "fields": {
+    "longitude": "9.151293",
+    "latitude": "45.749950",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 122,
+  "fields": {
+    "longitude": "11.359108",
+    "latitude": "44.910479",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:43.601",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 123,
+  "fields": {
+    "longitude": "21.949793",
+    "latitude": "27.585456",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Libya"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 124,
+  "fields": {
+    "longitude": "25.598277",
+    "latitude": "52.604606",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Belarus"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 125,
+  "fields": {
+    "longitude": "13.836476",
+    "latitude": "66.297978",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Norway"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 126,
+  "fields": {
+    "longitude": "29.076748",
+    "latitude": "54.301068",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Belarus"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 127,
+  "fields": {
+    "longitude": "-0.829492",
+    "latitude": "43.521869",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "France"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 128,
+  "fields": {
+    "longitude": "-5.710132",
+    "latitude": "54.753515",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "United Kingdom"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 129,
+  "fields": {
+    "longitude": "79.067586",
+    "latitude": "46.036664",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Kazakhstan"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 130,
+  "fields": {
+    "longitude": "70.979439",
+    "latitude": "40.886230",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Uzbekistan"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 131,
+  "fields": {
+    "longitude": "5.966997",
+    "latitude": "46.204602",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "France"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 132,
+  "fields": {
+    "longitude": "24.155904",
+    "latitude": "43.223547",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Bulgaria"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 133,
+  "fields": {
+    "longitude": "-3.022625",
+    "latitude": "55.156776",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "United Kingdom"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 134,
+  "fields": {
+    "longitude": "16.971882",
+    "latitude": "64.863156",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Sweden"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 135,
+  "fields": {
+    "longitude": "22.411355",
+    "latitude": "-2.922980",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Democratic Republic of the Congo"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 136,
+  "fields": {
+    "longitude": "1.522687",
+    "latitude": "7.806118",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Benin"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 137,
+  "fields": {
+    "longitude": "-5.714872",
+    "latitude": "33.133889",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Morocco"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 138,
+  "fields": {
+    "longitude": "28.035405",
+    "latitude": "45.105560",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Romania"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 139,
+  "fields": {
+    "longitude": "29.281728",
+    "latitude": "30.771907",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Egypt"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 140,
+  "fields": {
+    "longitude": "26.736342",
+    "latitude": "54.692245",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Belarus"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 141,
+  "fields": {
+    "longitude": "1.517885",
+    "latitude": "48.192312",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "France"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 142,
+  "fields": {
+    "longitude": "17.938231",
+    "latitude": "29.895319",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Libya"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 143,
+  "fields": {
+    "longitude": "1.819326",
+    "latitude": "50.995195",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "France"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 144,
+  "fields": {
+    "longitude": "8.494780",
+    "latitude": "34.747770",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Tunisia"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 145,
+  "fields": {
+    "longitude": "-4.462567",
+    "latitude": "56.652409",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "United Kingdom"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 146,
+  "fields": {
+    "longitude": "8.762623",
+    "latitude": "54.839587",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Germany"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 147,
+  "fields": {
+    "longitude": "9.808179",
+    "latitude": "55.128825",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Denmark"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 148,
+  "fields": {
+    "longitude": "68.575143",
+    "latitude": "24.385053",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Pakistan"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 149,
+  "fields": {
+    "longitude": "16.167063",
+    "latitude": "46.695419",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Slovenia"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 150,
+  "fields": {
+    "longitude": "24.442622",
+    "latitude": "45.902610",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Romania"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 151,
+  "fields": {
+    "longitude": "16.984533",
+    "latitude": "22.808837",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Chad"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 152,
+  "fields": {
+    "longitude": "35.747769",
+    "latitude": "46.877078",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Ukraine"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 153,
+  "fields": {
+    "longitude": "25.741052",
+    "latitude": "40.106500",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Turkey"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 154,
+  "fields": {
+    "longitude": "64.020423",
+    "latitude": "36.680700",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Turkmenistan"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 155,
+  "fields": {
+    "longitude": "88.951910",
+    "latitude": "35.384303",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "China"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 156,
+  "fields": {
+    "longitude": "-86.753485",
+    "latitude": "65.306174",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Canada"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 157,
+  "fields": {
+    "longitude": "16.704362",
+    "latitude": "60.073051",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Sweden"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 158,
+  "fields": {
+    "longitude": "-6.606322",
+    "latitude": "55.605155",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "United Kingdom"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 159,
+  "fields": {
+    "longitude": "-6.274951",
+    "latitude": "36.927534",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Spain"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 160,
+  "fields": {
+    "longitude": "35.157366",
+    "latitude": "20.318172",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Sudan"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 161,
+  "fields": {
+    "longitude": "31.595936",
+    "latitude": "59.850603",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Russia"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 162,
+  "fields": {
+    "longitude": "16.608095",
+    "latitude": "68.754986",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Norway"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 163,
+  "fields": {
+    "longitude": "72.184287",
+    "latitude": "22.719285",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "India"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 164,
+  "fields": {
+    "longitude": "84.787258",
+    "latitude": "36.592306",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "China"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 165,
+  "fields": {
+    "longitude": "24.298823",
+    "latitude": "47.403334",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Romania"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 166,
+  "fields": {
+    "longitude": "17.310389",
+    "latitude": "28.995503",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Libya"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 167,
+  "fields": {
+    "longitude": "15.668761",
+    "latitude": "62.283729",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Sweden"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 168,
+  "fields": {
+    "longitude": "-0.087629",
+    "latitude": "40.216066",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Spain"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 169,
+  "fields": {
+    "longitude": "30.697886",
+    "latitude": "66.092882",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Russia"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 170,
+  "fields": {
+    "longitude": "62.880178",
+    "latitude": "47.298072",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Kazakhstan"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 171,
+  "fields": {
+    "longitude": "54.802240",
+    "latitude": "55.373165",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Russia"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 172,
+  "fields": {
+    "longitude": "-4.255091",
+    "latitude": "25.754772",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Algeria"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 173,
+  "fields": {
+    "longitude": "-0.945507",
+    "latitude": "46.762181",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "France"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 174,
+  "fields": {
+    "longitude": "25.554137",
+    "latitude": "-1.481870",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Democratic Republic of the Congo"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 175,
+  "fields": {
+    "longitude": "19.088625",
+    "latitude": "15.798744",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Chad"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 176,
+  "fields": {
+    "longitude": "31.264634",
+    "latitude": "-5.707568",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Tanzania"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 177,
+  "fields": {
+    "longitude": "13.373087",
+    "latitude": "51.284390",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Germany"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 178,
+  "fields": {
+    "longitude": "-6.130156",
+    "latitude": "34.821834",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Morocco"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 179,
+  "fields": {
+    "longitude": "24.288406",
+    "latitude": "53.029556",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Belarus"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 180,
+  "fields": {
+    "longitude": "4.633395",
+    "latitude": "30.759155",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Algeria"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 181,
+  "fields": {
+    "longitude": "22.091452",
+    "latitude": "56.298965",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Lithuania"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 182,
+  "fields": {
+    "longitude": "19.092194",
+    "latitude": "50.310242",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Poland"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 183,
+  "fields": {
+    "longitude": "-7.291190",
+    "latitude": "56.558366",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "United Kingdom"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 184,
+  "fields": {
+    "longitude": "9.242780",
+    "latitude": "62.642999",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Norway"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 185,
+  "fields": {
+    "longitude": "14.608974",
+    "latitude": "41.845173",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 186,
+  "fields": {
+    "longitude": "29.993389",
+    "latitude": "40.272531",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Turkey"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 187,
+  "fields": {
+    "longitude": "4.328692",
+    "latitude": "43.690770",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "France"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 188,
+  "fields": {
+    "longitude": "17.958196",
+    "latitude": "54.199073",
+    "app_id": "IOS_MATE",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Poland"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 189,
+  "fields": {
+    "longitude": "9.846013",
+    "latitude": "36.059094",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Tunisia"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 190,
+  "fields": {
+    "longitude": "28.267625",
+    "latitude": "64.921003",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Finland"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 191,
+  "fields": {
+    "longitude": "-6.199992",
+    "latitude": "35.441037",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Morocco"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 192,
+  "fields": {
+    "longitude": "3.835038",
+    "latitude": "44.695559",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "France"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 193,
+  "fields": {
+    "longitude": "27.514253",
+    "latitude": "26.514895",
+    "app_id": "IOS_ALERT",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Egypt"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 194,
+  "fields": {
+    "longitude": "15.182103",
+    "latitude": "38.910933",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Italy"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 195,
+  "fields": {
+    "longitude": "10.522353",
+    "latitude": "29.093747",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Libya"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 196,
+  "fields": {
+    "longitude": "6.833425",
+    "latitude": "33.737006",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Algeria"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 197,
+  "fields": {
+    "longitude": "20.973129",
+    "latitude": "41.461550",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Macedonia (FYROM)"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 198,
+  "fields": {
+    "longitude": "19.235250",
+    "latitude": "51.431559",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Poland"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 199,
+  "fields": {
+    "longitude": "-1.616269",
+    "latitude": "47.244613",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "France"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 200,
+  "fields": {
+    "longitude": "14.313535",
+    "latitude": "47.997010",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Austria"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 201,
+  "fields": {
+    "longitude": "28.485423",
+    "latitude": "49.290989",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Ukraine"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 202,
+  "fields": {
+    "longitude": "5.048199",
+    "latitude": "34.477376",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Algeria"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 203,
+  "fields": {
+    "longitude": "26.398653",
+    "latitude": "36.932429",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Greece"
+  }
+},
+{
+  "model": "map.downloadlocationtime",
+  "pk": 204,
+  "fields": {
+    "longitude": "28.412786",
+    "latitude": "24.509820",
+    "app_id": "APP_3",
+    "downloaded_at": "2017-08-16T08:30:39.097",
+    "country": "Egypt"
+  }
+}
+]

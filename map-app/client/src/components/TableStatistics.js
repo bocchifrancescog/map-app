@@ -19,6 +19,7 @@ class TableStatistics extends React.Component {
     var cols = [{
         Header: () => <h4 className="ui header"> {firstColumn}</h4>,
         accessor: fieldName,
+        filterable: true,
       }]
     appIds.forEach(function(col, j){
         cols.push({

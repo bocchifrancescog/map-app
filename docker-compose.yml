@@ -6,21 +6,24 @@ services:
     ports:
       - "5432:5432"
     restart: always
+
   server:
     build:
       context: .
       dockerfile: ./docker-files/server/Dockerfile
-    command: python ./map-app/server/manage.py runserver 0.0.0.0:3001
+    command: >
+            bash -c "sleep 10 &&
+            ./map-app/server/manage.py runserver 0.0.0.0:3001"
+    restart: always
     volumes:
       - .:/code
-    restart: always
     ports:
       - "3001:3001"
     expose:
       - "3001"
     depends_on:
       - db
-  
+
   client:
     build:
       context: .

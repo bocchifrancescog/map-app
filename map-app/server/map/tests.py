@@ -5,6 +5,8 @@ import datetime
 
 from django.test import TestCase
 from models import DownloadLocationTime
+
+
 # Create your tests here.
 
 class DownloadLocationTimeTestCase(TestCase):
@@ -23,6 +25,7 @@ class DownloadLocationTimeTestCase(TestCase):
         except Exception:
             self.fail("Cannot save DownloadLocationTimeTestCase instance with valid values")
 
+
 class ViewsTestCase(TestCase):
     """ Unit tests for the view """
 
@@ -35,31 +38,38 @@ class ViewsTestCase(TestCase):
 
         # Milan
         DownloadLocationTime(
-            longitude=9.1900,latitude=45.4642, app_id='IOS_ALERT', downloaded_at=morning)\
+            longitude=9.1900, latitude=45.4642, app_id='IOS_ALERT', downloaded_at=morning) \
+            .save()
+
+        # Brescia
+        DownloadLocationTime(
+            longitude=10.12, latitude=45.32, app_id='IOS_MATE', downloaded_at=morning) \
             .save()
 
         # London
         DownloadLocationTime(
-            longitude=-0.1278,latitude=51.5074, app_id='IOS_MATE', downloaded_at=evening)\
+            longitude=-0.1278, latitude=51.5074, app_id='IOS_MATE', downloaded_at=evening) \
             .save()
 
     def tearDown(self):
-        """Unconfigure method executed after each test."""
+        """
+            Unconfigure method executed after each test.
+        """
         DownloadLocationTime.objects.all().delete()
 
     def test_downloads_001(self):
         """
         Check that /api/map/downloads/ works and returns to locations
         """
-        url_params = "?lat_min=45.0&latMax=52.0&lngMin=-1.0&lngMax=10.0"
-        response = self.client.get('/api/map/downloads/'+url_params)
+        url_params = "?lat_min=45.0&latMax=52.0&lngMin=-1.0&lngMax=11.0"
+        response = self.client.get('/api/map/downloads/' + url_params)
 
         # check status
         self.assertEqual(response.status_code, 200)
 
         # check content
         content = response.json()
-        self.assertEqual(len(content), 2)
+        self.assertEqual(len(content), 3)
 
         content = str(content)
         self.assertIn('IOS_ALERT', content)
@@ -80,13 +90,12 @@ class ViewsTestCase(TestCase):
 
         # It's ordered by country
         self.assertEqual(content[0]['country'], 'Italy')
-        self.assertEqual(content[0]['counts']['IOS_MATE'], 0)
+        self.assertEqual(content[0]['counts']['IOS_MATE'], 1)
         self.assertEqual(content[0]['counts']['IOS_ALERT'], 1)
 
         self.assertEqual(content[1]['country'], 'United Kingdom')
         self.assertEqual(content[1]['counts']['IOS_MATE'], 1)
         self.assertEqual(content[1]['counts']['IOS_ALERT'], 0)
-
 
     def test_downloads_by_time_001(self):
         """
@@ -103,7 +112,7 @@ class ViewsTestCase(TestCase):
 
         # It's ordered by time of the day
         self.assertEqual(content[0]['label'], 'Morning')
-        self.assertEqual(content[0]['counts']['IOS_MATE'], 0)
+        self.assertEqual(content[0]['counts']['IOS_MATE'], 1)
         self.assertEqual(content[0]['counts']['IOS_ALERT'], 1)
 
         self.assertEqual(content[1]['label'], 'Afternoon')
