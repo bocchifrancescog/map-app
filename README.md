@@ -20,7 +20,7 @@ docker-compose build
 docker-compose up
 ```
 
-On another console load some data (just needed the FIRST time)
+On another console, load some data (just needed the FIRST time):
 ```
 cd into the root folder
 Find the name of the server container with "docker ps". Should be something like "mapapp_server_1"
