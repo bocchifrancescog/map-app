@@ -14,20 +14,24 @@ const API_KEY = 'MyGoogleApiKey';
 To know how to get a google api key, please visit: https://developers.google.com/maps/documentation/javascript/get-api-key
 
 ### 2. Docker setup
-- cd into the root folder
-- docker-compose build
-- docker-compose up
+```
+cd into the root folder
+docker-compose build
+docker-compose up
+```
 
 On another console load some data (just needed the FIRST time)
-- cd into the root folder
-- Find the server container with "docker ps". Should be something like "mapapp_server_1"
+```
+cd into the root folder
+Find the server container with "docker ps". Should be something like "mapapp_server_1"
 
-- docker exec -it mapapp_server_1 /bin/bash
-- cd map-app/server/
-- python manage.py migrate
-- python manage.py loaddata ./map/fixtures/auth_initial_data.json
-- python manage.py loaddata ./map/fixtures/map_initial_data.json
-- exit
+docker exec -it mapapp_server_1 /bin/bash
+cd map-app/server/
+python manage.py migrate
+python manage.py loaddata ./map/fixtures/auth_initial_data.json
+python manage.py loaddata ./map/fixtures/map_initial_data.json
+exit
+```
 
 # Results
 - open browser at http://localhost:3000/
