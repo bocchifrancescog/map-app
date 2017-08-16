@@ -23,7 +23,7 @@ docker-compose up
 On another console load some data (just needed the FIRST time)
 ```
 cd into the root folder
-Find the server container with "docker ps". Should be something like "mapapp_server_1"
+Find the name of the server container with "docker ps". Should be something like "mapapp_server_1"
 
 docker exec -it mapapp_server_1 /bin/bash
 cd map-app/server/
@@ -32,6 +32,7 @@ python manage.py loaddata ./map/fixtures/auth_initial_data.json
 python manage.py loaddata ./map/fixtures/map_initial_data.json
 exit
 ```
+Now you are ready to open the browser
 
 # Results
 - open browser at http://localhost:3000/
