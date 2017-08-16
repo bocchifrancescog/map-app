@@ -46,12 +46,15 @@ To see data in the backend:
 - django 1.11
 - reactJS 15.6.1
 
-![Alt text](/screenshots/home.png?raw=true "Home page screenshot")
-
-
 # Expansion
 
 In order to create a push notification system for a web application there are 2(ish) ideas that come to my mind:
 1. Polling: the client application query the server with a classic ajax request in order to see if there is any new data. Based on the frequency it can look like receiving a real time notification from the server.
 2. Websockets: since they are continuos connections between client and the server, the server can send any message to the client at any time, so every time thare are new data, the client will be notified. From the backend prospective, I would implement a signal, that every time new data are saved would send them to the client.
 3. Server-sent events: They  use http continuos connections as websockets, but the messages are 1 way only (from server to client). Not supported on Microsoft browsers yet.
+
+# Screenshot of the application
+
+Desktop             |  Mobile
+:-------------------------:|:-------------------------:
+![Alt text](/screenshots/home.png?raw=true)  |  ![Alt text](/screenshots/home2.png?raw=true)
